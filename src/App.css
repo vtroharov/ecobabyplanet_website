@@ -2,8 +2,13 @@
   --mainBlue:#2a2a72;
   --lightBlue:#009ffd;
   --mainWhite:#f3f3f3;
+  --lightWhite:#ffffff;
   --mainDark:#232528;
   --mainYellow:#ffa400;
+  --mainGrey:#a69999;
+  --lightGrey:#aaaaaa;
+  --darkGrey: #666666;
+
 }
 body{
   font-family: 'Oswald', sans-serif !important;
@@ -11,7 +16,7 @@ body{
   color: var(--mainDark) !important;
 }
 .text-title{
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Baloo 2', cursive;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
@@ -37,7 +42,7 @@ body{
 .cart-icon{
   cursor: pointer;
   font-size: 1.2rem;
-  color: var(--mainYellow);
+  color: var(--darkGrey);
 }
 
 

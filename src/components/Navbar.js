@@ -7,20 +7,40 @@ import { ButtonContainer } from './Button';
 export default class Navbar extends Component {
     render() {
         return (
-            <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
+            <NavWrapper className="navbar navbar-expand-sm navbar-light px-sm-5">
                 <Link to='/'>
-                    <img src={logo} alt="store" className="navbar-brand" />
+                    <img src={logo} alt="store" className="navbar-header" />
                 </Link>
-                <ul className="navbar-nav align-items-center">
-                    <li className="nav-item ml-5">
+                <ul className="navbar-nav">
+                    <li className="nav-item ml-5 mr-3">
                         <Link to='/' className='nav-link'>
-                            products
+                            home
+                        </Link>
+                    </li>
+                    <li className="nav-item ml-3 mr-3">
+                        <Link to='/' className='nav-link'>
+                            about us
+                        </Link>
+                    </li>
+                    <li className="nav-item ml-3 mr-3">
+                        <Link to='/' className='nav-link'>
+                            shop
+                        </Link>
+                    </li>
+                    <li className="nav-item ml-3 mr-3">
+                        <Link to='/' className='nav-link'>
+                            contact
+                        </Link>
+                    </li>
+                    <li className="nav-item ml-3 mr-3">
+                        <Link to='/' className='nav-link'>
+                            blog
                         </Link>
                     </li>
                 </ul>
                 <Link to='/cart' className="ml-auto">
                     <ButtonContainer>
-                        <span className="mr-2">
+                        <span className="mr-3">
                             <i className="fas fa-cart-plus"></i>
                         </span>
                         My Cart
@@ -32,10 +52,10 @@ export default class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
-    background: var(--mainBlue);
+    background: var(--lightWhite);
     .nav-link {
-        color: var(--mainWhite) !important;
-        font-size: 1.3rem;
+        color: var(--mainGrey) !important;
+        font-size: 1.2rem;
         text-transform: capitalize;
     }
 `;

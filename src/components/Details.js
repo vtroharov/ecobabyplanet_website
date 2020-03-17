@@ -23,15 +23,15 @@ export default class Details extends Component {
                                     <img src={img} className= "img-fluid" alt= "product" />
                                 </div>
                                 {/* product text */}
-                                <div className= "col-10 mx-auto col-md-6 text-capitalize my-3">
-                                    <h2>model: {title}</h2>
+                                <div className= "col-10 mx-auto col-md-6 my-3">
+                                    <h2>Model: {title}</h2>
                                     <h4 className= "text-title text-uppercase text-muted mt-3 mb-2">
                                         made by: <span className= "text-uppercase">
                                             {company} </span>
                                     </h4>
                                     <h4 className= "text-blue">
                                         <strong>
-                                            price: <span>$</span>
+                                            Price: <span>$</span>
                                             {price}
                                         </strong>
                                     </h4>

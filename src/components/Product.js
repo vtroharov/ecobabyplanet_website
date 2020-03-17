@@ -24,7 +24,10 @@ export default class Product extends Component {
                                         value.openModal(id);
                                     }}
                                 >
-                                    {inCart?(<p className="text-capitalize mb=0" disabled>in cart</p>):(<i className= "fas fa-cart-plus" />)}
+                                    {inCart?(
+                                        <p className="text-capitalize mb-0" disabled>in cart</p>
+                                    ):
+                                    (<i className= "fas fa-cart-plus" />)}
                                 </button>
                             </div>)
                         }
@@ -75,7 +78,7 @@ const ProdcutWrapper = styled.div`
             box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
         }
         .card-footer {
-            background: rgba(247,247,247);
+            background: rgba(210,210,210);
         }
     }
     .img-container {
@@ -94,9 +97,9 @@ const ProdcutWrapper = styled.div`
         bottom: 0;
         right: 0;
         padding: 0.2rem 0.4rem;
-        background: var(--lightBlue);
+        background: var(--lightGrey);
         border: none;
-        color: var(--mainBlue);
+        color: var(--darkGrey);
         font-size: 1.4rem;
         border-radius: 0.5rem 0 0 0;
         transform: translate(100%,100%);
@@ -107,7 +110,7 @@ const ProdcutWrapper = styled.div`
         transition: all 0.3s linear;
     }
     .cart-btn:hover {
-        color: var(-mainBlue);
+        color: var(--mainDark);
         cursor: pointer;
     }
 `;
