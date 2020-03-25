@@ -1,61 +1,92 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../logo.svg';
+import logo from '../img/Logo_dark.png';
 import styled from 'styled-components';
 import { ButtonContainer } from './Button';
 
 export default class Navbar extends Component {
     render() {
         return (
-            <NavWrapper className="navbar navbar-expand-sm navbar-light px-sm-5">
+            <NavWrapper className="navbar navbar-expand-md navbar-light">
+                {/* <div className="navbar-header"> */}
+                    <button className="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                {/* </div> */}
                 <Link to='/'>
-                    <img src={logo} alt="store" className="navbar-header" />
+                    <img src={logo} alt="store" width="160" height="80" className="navbar-header" />
                 </Link>
-                <ul className="navbar-nav">
-                    <li className="nav-item ml-5 mr-3">
-                        <Link to='/' className='nav-link'>
-                            home
-                        </Link>
-                    </li>
-                    <li className="nav-item ml-3 mr-3">
-                        <Link to='/' className='nav-link'>
-                            about us
-                        </Link>
-                    </li>
-                    <li className="nav-item ml-3 mr-3">
-                        <Link to='/' className='nav-link'>
-                            shop
-                        </Link>
-                    </li>
-                    <li className="nav-item ml-3 mr-3">
-                        <Link to='/' className='nav-link'>
-                            contact
-                        </Link>
-                    </li>
-                    <li className="nav-item ml-3 mr-3">
-                        <Link to='/' className='nav-link'>
-                            blog
-                        </Link>
-                    </li>
-                </ul>
-                <Link to='/cart' className="ml-auto">
-                    <ButtonContainer>
-                        <span className="mr-3">
-                            <i className="fas fa-cart-plus"></i>
-                        </span>
-                        My Cart
-                    </ButtonContainer>
-                </Link>
+                <div className="collapse navbar-collapse" id="navbarToggler">
+                    <ul className="nav navbar-nav">        {/*nav navbar-nav">*/}
+                        <li className="nav-item active">
+                            <Link to='/home' className='nav-link'>
+                                home
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/about_us' className='nav-link'>
+                                about us
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/shop' className='nav-link'>
+                                shop
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/contact' className='nav-link'>
+                                contact
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/blog' className='nav-link'>
+                                blog
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/cart' className='nav-link'>
+                                <ButtonContainer>
+                                    <span className="mr-2">
+                                        <i className="fas fa-cart-plus"></i>
+                                    </span>
+                                    My Cart
+                                </ButtonContainer>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
             </NavWrapper>
+
+
+
+
+            
         );
     }
 }
 
 const NavWrapper = styled.nav`
     background: var(--lightWhite);
+    position: relative;
+    top: 0;
+    width: 100%;
+    .navbar-header {
+        margin-right: 20px;
+    }
+    .nav {
+        margin-left: 20px;
+        width: 100%;
+    }
+    .nav-item {
+        width: 16.66667%;
+    }
     .nav-link {
+        width: 100%;
         color: var(--mainGrey) !important;
         font-size: 1.2rem;
         text-transform: capitalize;
+        &:hover {
+            color: var(--darkGrey) !important;
+        }
     }
 `;

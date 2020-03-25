@@ -65,12 +65,12 @@ Product.propTypes = {
 const ProdcutWrapper = styled.div`
     .card {
         border-color: transparent;
-        transition: all 1s linear;
+        transition: all 0.5s linear;
     }
     .card-footer {
         background: transparent;
         border-top: transparent;
-        transition: all 1s linear;
+        transition: all 0.5s linear;
     }
     &:hover {
         .card {
@@ -78,7 +78,7 @@ const ProdcutWrapper = styled.div`
             box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
         }
         .card-footer {
-            background: rgba(210,210,210);
+            background: rgba(220,220,220);
         }
     }
     .img-container {
