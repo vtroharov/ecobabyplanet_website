@@ -18,21 +18,21 @@ export default class AboutUs extends Component {
                 <div className="row my-2">
                     <div className="col-5 mx-auto">
                         <p className="text-muted">Once Upon a Time...</p>
-                        <p className="text-muted"><Desc>Eco Baby Planet is the result of love and sleepless nights, coffee-gone-cold and dedication to a dream.
+                        <Desc className="text-muted text-justify">Eco Baby Planet is the result of love and sleepless nights, coffee-gone-cold and dedication to a dream.
                         <br/><br/>Founded by French first-time mum Celine living in Sydney Australia, Eco Baby Planet was created out of a desire for unique and beautiful products, made with care and awareness. But not only.
                         <br/><br/>Being an isolated mum far from her family in France, Celine realised how life-saving  and empowering it was to find and surround herself with other like-minded mums and support each other in that magical but challenging journey of being a new parent.
                         <br/><br/>Eager to give back, she developed and grew, along with her brand, the wonderful Eco Baby Planet community made of beautiful parents and families, all over the word. 
                         <br/><br/>Through our Blogs and Social Media​​​​​​​, we LOVE to  exchange, discuss, brainstorm and laugh with you all, so don't be shy and drop by to say Hi! 
-                        </Desc></p>
+                        </Desc>
                     </div>
                     <div className="col-5 mx-auto">
                         <p className="text-muted">Our Vision</p>
-                        <p className="text-muted"><Desc>Parenting is tough. Finding modern, high quality products for your little ones shouldn't be.
+                        <Desc className="text-muted text-justify">Parenting is tough. Finding modern, high quality products for your little ones shouldn't be.
                         <br/><br/>At Eco Baby Planet, we don't just create baby products. We create your favorite baby products. You know, the kind that gives you that nostalgic feeling when you have to put it away once your baby has grown up.
                         <br/><br/>Every decision we make is with this goal in mind. We dream it, then we make it and the end-result is something magical. We love reinventing what's possible and our promise to you is to deliver high quality, unique designs and creations but also experiences and ideas. We want to inspire you.
                         <br/><br/>Best ideas come from collaboration. We're excited to start a dialogue, learn about you and make something beautiful together.
                         <br/><br/>Let's connect! ​​​​​​​
-                        </Desc></p>
+                        </Desc>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@ const Text = styled.div`
         font-size: 1.5vw; 
     }
 `;
-const Desc = styled.div`
+const Desc = styled.p`
     font-size: 0.7rem;
     font-style: italic;
 `;

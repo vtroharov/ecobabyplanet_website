@@ -38,7 +38,7 @@ export default class AboutUs extends Component {
                     <Desc className="col-7 mx-auto">
                             <p className="text-title">Introducing...</p>
                             <p className="text-sub">Our New Milestone blanket and Cards Set</p>
-                            <p className="text">Make those special moments last forever with our 'Baby Milestone Blanket and Cards Set'.
+                            <p className="text text-justify">Make those special moments last forever with our 'Baby Milestone Blanket and Cards Set'.
                             <br/><br/>Your baby will love laying on this mat to record their special milestones as the gorgeous wooden circle and arrow highlight and point to proud ages and dates. Family and friends will love seeing your little ones achievements - time is precious so take lots of lovely photos!
                             <br/><br/>Lay the stylish white mat on the floor and use the beautiful wooden ring to mark the month of your baby's age. Use the beautiful cards to complement your shot and share your awesome picture on your social media and with your family!
                             ​​​​<br/><br/>This is a perfect new born gift, mother to be gift or baby shower gift. 

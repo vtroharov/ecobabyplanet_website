@@ -19,7 +19,7 @@ export default class Footer extends Component {
                     <div className="row mt-3">
                         <div className="col-4">
                             <p className="text-uppercase">About Us</p>
-                            <p>Eco Baby Planet is an Australian brand creating unique and modern eco-friendly products for babies and young children.<br/>​​​​​​​Founded in 2018, Eco Baby Planet started out of a desire for beautiful and high quality baby products, cherished and loved by new parents everywhere.</p>
+                            <p className="text-justify">Eco Baby Planet is an Australian brand creating unique and modern eco-friendly products for babies and young children.<br/>​​​​​​​Founded in 2018, Eco Baby Planet started out of a desire for beautiful and high quality baby products, cherished and loved by new parents everywhere.</p>
                         </div>
                         <div className="col-4 text-center">
                             <p className="text-uppercase">Contact Us</p>
@@ -27,7 +27,7 @@ export default class Footer extends Component {
                         </div>
                         <div className="col-4">
                             <p className="text-uppercase">What's up with Eco Baby Planet</p>
-                            <p>Get exclusive discounts, blog posts and product launches. No spam, ever.</p>
+                            <p className="text-justify">Get exclusive discounts, blog posts and product launches. No spam, ever.</p>
                             <form>
                                 <div className="form-group mx-auto">
                                     <input type="name" className="form-control" id="inputName" placeholder="First Name" />

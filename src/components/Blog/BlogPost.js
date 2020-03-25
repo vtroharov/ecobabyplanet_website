@@ -39,7 +39,7 @@ export default function BlogPost(props) {
                 <div className="postImageContainer">
                     <img src={require('../../img/blog/' + post.blogImage)} alt="Post Pic" />
                 </div>
-                <div className="postContent">
+                <div className="postContent text-justify">
                     <h3>{post.blogTitle}</h3>
                     <p>{post.blogText}</p>
                 </div>

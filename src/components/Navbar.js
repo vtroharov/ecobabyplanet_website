@@ -8,16 +8,14 @@ export default class Navbar extends Component {
     render() {
         return (
             <NavWrapper className="navbar navbar-expand-md navbar-light">
-                {/* <div className="navbar-header"> */}
-                    <button className="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                {/* </div> */}
+                <button className="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
                 <Link to='/'>
-                    <img src={logo} alt="store" width="160" height="80" className="navbar-header" />
+                    <img src={logo} alt="home" width="160" height="80" className="navbar-header" />
                 </Link>
                 <div className="collapse navbar-collapse" id="navbarToggler">
-                    <ul className="nav navbar-nav">        {/*nav navbar-nav">*/}
+                    <ul className="nav navbar-nav">    
                         <li className="nav-item active">
                             <Link to='/home' className='nav-link'>
                                 home
@@ -45,12 +43,11 @@ export default class Navbar extends Component {
                         </li>
                         <li className="nav-item">
                             <Link to='/cart' className='nav-link'>
-                                <ButtonContainer>
-                                    <span className="mr-2">
-                                        <i className="fas fa-cart-plus"></i>
+                                {/* <ButtonContainer> */}
+                                    <span className="myCart mr-2">
+                                        <i className="fas fa-cart-plus"></i> my cart
                                     </span>
-                                    My Cart
-                                </ButtonContainer>
+                                {/* </ButtonContainer> */}
                             </Link>
                         </li>
                     </ul>
@@ -75,6 +72,7 @@ const NavWrapper = styled.nav`
     }
     .nav {
         margin-left: 20px;
+        margin-top: 25px;
         width: 100%;
     }
     .nav-item {
@@ -88,5 +86,9 @@ const NavWrapper = styled.nav`
         &:hover {
             color: var(--darkGrey) !important;
         }
+    }
+    .myCart {
+        white-space: nowrap;
+        overflow: hidden;
     }
 `;
