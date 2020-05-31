@@ -67,7 +67,7 @@ export default class Footer extends Component {
                             <p className="text-uppercase">What's up with Eco Baby Planet</p>
                             <p className="text-justify">Get exclusive discounts, blog posts and product launches. No spam, ever.</p>
                             <Form onSubmit={this.handleSubmit.bind(this)}>
-                                <FormGroup className="mx-auto" controlId="formBasicName">
+                                <FormGroup className="mx-auto" controlid="formBasicName">
                                     <Input
                                         type="text"
                                         name="user_name"
@@ -78,7 +78,7 @@ export default class Footer extends Component {
                                         required
                                     />
                                 </FormGroup>
-                                <FormGroup className="mx-auto" controlId="formBasicEmail">
+                                <FormGroup className="mx-auto" controlid="formBasicEmail">
                                     <Input
                                         type="email"
                                         name="user_email"
@@ -113,7 +113,7 @@ const Bottom = styled.div`
     color: var(--mainWhite);
     padding: 10px;
     font-size: 0.8rem;
-    font-style: Italic;
+    //font-style: Italic;
     .btn {
         width: 100%;
     }

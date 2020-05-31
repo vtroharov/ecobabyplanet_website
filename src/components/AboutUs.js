@@ -16,7 +16,7 @@ export default class AboutUs extends Component {
                     </Text>
                 </div>
                 <div className="row my-2">
-                    <div className="col-5 mx-auto">
+                    <div className="col-md-5 mx-auto">
                         <p className="text-muted">Once Upon a Time...</p>
                         <Desc className="text-muted text-justify">Eco Baby Planet is the result of love and sleepless nights, coffee-gone-cold and dedication to a dream.
                         <br/><br/>Founded by French first-time mum Celine living in Sydney Australia, Eco Baby Planet was created out of a desire for unique and beautiful products, made with care and awareness. But not only.
@@ -25,7 +25,7 @@ export default class AboutUs extends Component {
                         <br/><br/>Through our Blogs and Social Media​​​​​​​, we LOVE to  exchange, discuss, brainstorm and laugh with you all, so don't be shy and drop by to say Hi! 
                         </Desc>
                     </div>
-                    <div className="col-5 mx-auto">
+                    <div className="col-md-5 mx-auto">
                         <p className="text-muted">Our Vision</p>
                         <Desc className="text-muted text-justify">Parenting is tough. Finding modern, high quality products for your little ones shouldn't be.
                         <br/><br/>At Eco Baby Planet, we don't just create baby products. We create your favorite baby products. You know, the kind that gives you that nostalgic feeling when you have to put it away once your baby has grown up.
@@ -67,7 +67,7 @@ const Text = styled.div`
 `;
 const Desc = styled.p`
     font-size: 0.7rem;
-    font-style: italic;
+    //font-style: italic;
 `;
 const BannerImage = styled.div`
     width: 100%;

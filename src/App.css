@@ -12,7 +12,8 @@
 
 }
 body{
-  font-family: 'Oswald', sans-serif !important;
+  /* font-family: 'Oswald', sans-serif !important; */
+  font-family: 'Raleway';
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
 }

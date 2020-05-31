@@ -56,6 +56,7 @@ export default class ProductList_US extends Component {
                             <br/><br/>A new baby comes with a lot of milestones and memories - from their ​first word to their first birthday​. For a ​parent​, nothing is more important than remembering those moments forever.
                             <br/><br/>That’s why we are proud to offer this ​pack ​of 24 baby progress cards as a ​fun, creative​, and ​adorable ​way to record every cherished milestone! These ​infant-age memory cards feature sweet but also hilarious messages, presented with beautiful unique designs and a ​matte finish​. They are also comprised using ​extra-thick paper stock ​to ensure each card maintains its integrity.
                             <br/><br/>Because of their large size, our ​Baby’s First Cards​ really stand out in ​baby pictures. ​This ​child’s first year card set ​makes a unique ​gift for​ new parents ​and​ expecting mothers​, and are perfect ​baby shower presents​.
+                            <br/><br/>
                         </Desc>
                         <ButtonContainer className="mx-4" onClick={() => {
                             let win = window.open('')
@@ -94,9 +95,9 @@ const Text = styled.div`
         } 
     }
 `;
-const Desc = styled.p`
+const Desc = styled.div`
     font-size: 0.7rem;
-    font-style: italic;
+    //font-style: italic;
 `;
 const BannerImage = styled.div`
     width: 100%;

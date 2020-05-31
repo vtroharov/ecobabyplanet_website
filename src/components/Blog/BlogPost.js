@@ -17,11 +17,11 @@ export default function BlogPost(props) {
         blogText: ""
     });
     const [varId, setPostId] = useState('');
-    
+    console.log(varId);
     
     useEffect(() => {
         const postId = props.match.params.postId;
-        const post = blogPost.data.find(post => post.id == postId);
+        const post = blogPost.data.find(post => post.id === postId);
         setPost(post);
         setPostId(postId)
     }, [post, props.match.params.postId]);

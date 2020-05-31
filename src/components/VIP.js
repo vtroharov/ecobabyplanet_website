@@ -52,15 +52,15 @@ export default class Home extends Component {
                 <Benefits>
                     <img src={desc_vip} alt="description" className="bg1"/>
                     <div className="row">
-                        <div className="text_f col-5 mx-auto">
-                            <p className="text-muted">Free to Join</p>
-                            <Desc className="text-muted text-justify">Our Eco Baby Program is free to join. All you need is to register by filling in the form below.
+                        <div className="text_f col-md-4 mx-auto">
+                            <p className="text-muted px-2">Free to Join</p>
+                            <Desc className="text-muted text-justify px-2">Our Eco Baby Program is free to join. All you need is to register by filling in the form below.
                             <br/>You'll become a member of our Community and you'll be able to enjoy right away all the advantages that come with it!
                             </Desc>
                         </div>
-                        <div className="text_f col-5 mx-auto">
-                            <p className="text-muted">VIP Program Benefits</p>
-                            <Desc className="text-muted text-justify">So, what do I get?
+                        <div className="text_f col-md-4 mx-auto pr-5">
+                            <p className="text-muted px-2">VIP Program Benefits</p>
+                            <Desc className="text-muted text-justify px-2">So, what do I get?
                             <br/><br/>
                             <ul>
                                 <li>Early access to new products and sales</li>
@@ -71,10 +71,11 @@ export default class Home extends Component {
                         </div>
                     </div>
                     <div className="text_f row my-3">
-                        <div className="col-5 mx-auto">
-                            <p className="text-muted">Competitions</p>
-                            <Desc className="text-muted text-justify ">We'll be running several contests and competitions yearly with amazing prizes to win!
-                            <br/>Our members will be first informed and will have their own exclusive competitions as well. Stay tuned! 
+                        <div className="col-md-5 mx-auto">
+                            <p className="text-muted px-2">Competitions</p>
+                            <Desc className="text-muted text-justify px-2">We'll be running several contests and competitions yearly with amazing prizes to win!
+                            <br/>Our members will be first informed and will have their own exclusive competitions as well. Stay tuned!
+                            <br/><br/>
                             </Desc>
                         </div>
                     </div>
@@ -84,7 +85,7 @@ export default class Home extends Component {
                     <Form className="row" onSubmit={this.handleSubmit.bind(this)}>
                         <div className="heading col-md-8 mx-auto text-center text-muted my-4">Since we launched our VIP Program, we're proud to say that we welcomed many members joining our Community. Enter your details below and join this group of brilliant human beings!
                         </div>
-                        <FormGroup className="col-md-8 mx-auto" controlId="formBasicName">
+                        <FormGroup className="col-md-8 mx-auto" controlid="formBasicName">
                             <Input
                                 type="text"
                                 name="user_fname"
@@ -94,7 +95,7 @@ export default class Home extends Component {
                                 placeholder="First Name"
                             />
                         </FormGroup>
-                        <FormGroup className="col-md-8 mx-auto" controlId="formBasicName">
+                        <FormGroup className="col-md-8 mx-auto" controlid="formBasicName">
                             <Input
                                 type="text"
                                 name="user_lname"
@@ -104,7 +105,7 @@ export default class Home extends Component {
                                 placeholder="Last Name"
                             />
                         </FormGroup>
-                        <FormGroup className="col-md-8 mx-auto" controlId="formBasicEmail">
+                        <FormGroup className="col-md-8 mx-auto" controlid="formBasicEmail">
                             <Input
                                 type="email"
                                 name="user_email"
@@ -114,7 +115,7 @@ export default class Home extends Component {
                                 placeholder="Your Email"
                             />
                         </FormGroup>
-                        <FormGroup className="col-md-8 mx-auto" controlId="formBasicName">
+                        <FormGroup className="col-md-8 mx-auto" controlid="formBasicName">
                             <Input
                                 type="text"
                                 name="country"
@@ -124,7 +125,7 @@ export default class Home extends Component {
                                 placeholder="Country"
                             />
                         </FormGroup>
-                        <FormGroup className="col-md-8 mx-auto" controlId="formBasicName">
+                        <FormGroup className="col-md-8 mx-auto" controlid="formBasicName">
                             <Input
                                 type="text"
                                 name="state"
@@ -199,9 +200,9 @@ const Benefits = styled.div`
         position: relative;
     }
 `;
-const Desc = styled.p`
+const Desc = styled.div`
     font-size: 0.7rem;
-    font-style: italic;
+    //font-style: italic;
 `;
 const BannerImage = styled.div`
     width: 100%;

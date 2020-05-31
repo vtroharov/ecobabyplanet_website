@@ -19,22 +19,7 @@ export default class Construct extends Component {
 const Main = styled.div`
     margin-top: 75px;
 `;
-const Text = styled.div`
-    position: absolute; 
-    color: var(--mainWhite);
-    margin-top: 18vw;
-    left: 50px;
-    .flexbox { 
-        display: flex;
-        margin: 5%;
-    }
-    .text-title { 
-        font-size: 5vw; 
-    }
-    .text { 
-        font-size: 1.5vw; 
-    }
-`;
+
 const BannerImage = styled.div`
     width: 100%;
     padding: 30px;

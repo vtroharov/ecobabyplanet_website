@@ -9,14 +9,17 @@ export default class Details extends Component {
 
     constructor(props) {
         super(props);
+        this.increment = this.increment.bind(this);
+        this.decrement = this.decrement.bind(this);
         this.state = {
           image_no: 0,
           total_images: 0
         };
       }
 
-    increment() {
-        if (this.state.image_no == this.state.total_images) {
+    increment(e, img) {
+        this.setState({total_images: img.length -1});
+        if (this.state.image_no === this.state.total_images && this.state.total_images !== 0) {
             this.setState({image_no: this.state.image_no * 0});
         }
         else {
@@ -24,8 +27,9 @@ export default class Details extends Component {
         }
     };
 
-    decrement() {
-        if (this.state.image_no == 0) {
+    decrement(e, img) {
+        this.setState({total_images: img.length -1});
+        if (this.state.image_no === 0 && this.state.total_images !== 0) {
             this.setState({image_no: this.state.total_images});
         }
         else {
@@ -33,13 +37,14 @@ export default class Details extends Component {
         }
     };
 
+
     render() {
         return (
             <ProductConsumer>
                 {(value) => {
                     const {id, company, img, info, price, title, inCart} = value.detailProduct;
-                    this.state.total_images = img.length - 1;
-                    var info1 = "hello\nworld";
+                    //this.state.total_images = img.length - 1;
+                    //this.setImages(img);
                     return (
                         <div className= "container py-5">
                             {/* title */}
@@ -52,8 +57,8 @@ export default class Details extends Component {
                             <div className= "row">
                                 <Gallery className= "col-10 mx-auto col-md-6 my-3">
                                     <img src={Array.isArray(img) ? img[this.state.image_no] : img} className= "img-fluid" alt= "product" />
-                                    <ButtonContainer className='button1' onClick={(e) => this.increment(e)}>&#8594;</ButtonContainer>
-                                    <ButtonContainer className='button2' onClick={(e) => this.decrement(e)}>&#8592;</ButtonContainer>
+                                    <ButtonContainer className='button1' onClick={(e) => this.increment(e, img)}>&#8594;</ButtonContainer>
+                                    <ButtonContainer className='button2' onClick={(e) => this.decrement(e, img)}>&#8592;</ButtonContainer>
                                 </Gallery>
                                 {/* product text */}
                                 <div className= "col-10 mx-auto col-md-6 my-3">
@@ -102,6 +107,7 @@ export default class Details extends Component {
         );
     }
 }
+
 
 const Info = styled.pre`
     text-align: justify;

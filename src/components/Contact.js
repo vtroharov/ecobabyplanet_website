@@ -50,7 +50,7 @@ export default class Contact extends Component {
                     <Form className="row" onSubmit={this.handleSubmit.bind(this)}>
                         <div className="heading col-md-8 mx-auto text-center text-muted my-4">Have a question, comment, or just want to say hello? Don't be shy! Just fill out the form, or email us at contact@ecobabyplanet.com and we'll be in touch in 1-2 business days.
                         </div>
-                        <FormGroup className="col-md-8 mx-auto" controlId="formBasicName">
+                        <FormGroup className="col-md-8 mx-auto" controlid="formBasicName">
                             <Input
                                 type="text"
                                 name="user_name"
@@ -61,7 +61,7 @@ export default class Contact extends Component {
                                 required
                             />
                         </FormGroup>
-                        <FormGroup className="col-md-8 mx-auto" controlId="formBasicEmail">
+                        <FormGroup className="col-md-8 mx-auto" controlid="formBasicEmail">
                             <Input
                                 type="email"
                                 name="user_email"
@@ -72,7 +72,7 @@ export default class Contact extends Component {
                                 required
                             />
                         </FormGroup>
-                        <FormGroup className="col-md-8 mx-auto" controlId="formBasicMessage">
+                        <FormGroup className="col-md-8 mx-auto" controlid="formBasicMessage">
                             <Input
                                 type="textarea"
                                 name="message"

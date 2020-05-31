@@ -35,7 +35,7 @@ export default class Home extends Component {
                     </Link>
                 </Links>
                 <div className="row my-3">
-                    <Desc className="col-7 mx-auto">
+                    <Desc className="col-md-7 mx-auto">
                             <p className="text-title">Introducing...</p>
                             <p className="text-sub">Our New Milestone blanket and Cards Set</p>
                             <p className="text text-justify">Make those special moments last forever with our 'Baby Milestone Blanket and Cards Set'.
@@ -51,7 +51,7 @@ export default class Home extends Component {
                                 </ButtonContainer>
                             </Link>
                     </Desc>
-                    <BannerImage className="col-4 mx-auto">
+                    <BannerImage className="col-md-4 py-3 mx-auto">
                         <img src={product} alt="product" className="bg" />
                     </BannerImage>
                 </div>

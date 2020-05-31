@@ -28,9 +28,9 @@ export default class Navbar extends Component {
                                 about us
                             </Link>
                         </li>
-                        <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link dropdown-tog" data-toggle="dropdown">shop</a>
-                            <ul class="dropdown-menu pl-3">
+                        <li className="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <div className="nav-link dropdown-tog" data-toggle="dropdown">shop</div>
+                            <ul className="dropdown-menu pl-3">
                                 <li>
                                     <Link to='/us_shop' className='nav-link'>
                                         US Shop
