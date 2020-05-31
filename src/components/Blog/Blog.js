@@ -7,7 +7,7 @@ import RecentPosts from './RecentPosts';
 export default class Blog extends Component {
     render() {
         return (
-            <div className="container-fluid">
+            <Main className="container-fluid">
                 <div className="row">
                     <BannerImage>
                         <img src={banner} alt="banner" className="bg" />
@@ -21,11 +21,14 @@ export default class Blog extends Component {
                     <RecentPosts />
                     <SideBar />
                 </Desc>
-            </div>
+            </Main>
         );
     }
 }
- 
+
+const Main = styled.div`
+    margin-top: 75px;
+`;
 const Text = styled.div`
     position: absolute; 
     color: var(--mainWhite);

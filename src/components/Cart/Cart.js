@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import Title from '../Title';
 import CartColumns from './CartColumns';
 import EmptyCart from './EmptyCart';
@@ -9,6 +10,7 @@ import CartTotals from './CartTotals';
 export default class Cart extends Component {
     render() {
         return (
+            <Main>
             <section>
                 <ProductConsumer>
                     {value => {
@@ -29,6 +31,11 @@ export default class Cart extends Component {
                     }}
                 </ProductConsumer>
             </section>
+            </Main>
         );
     }
 }
+
+const Main = styled.div`
+    margin-top: 75px;
+`;

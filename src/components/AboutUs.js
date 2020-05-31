@@ -5,7 +5,7 @@ import banner from '../img/banner_about_us.png';
 export default class AboutUs extends Component {
     render() {
         return (
-            <div className="container-fluid">
+            <Main className="container-fluid">
                 <div className="row">
                     <BannerImage>
                         <img src={banner} alt="banner" className="bg" />
@@ -35,11 +35,14 @@ export default class AboutUs extends Component {
                         </Desc>
                     </div>
                 </div>
-            </div>
+            </Main>
         );
     }
 }
- 
+
+const Main = styled.div`
+    margin-top: 75px;
+`;
 const Text = styled.div`
     position: absolute; 
     color: var(--mainWhite);
@@ -50,10 +53,16 @@ const Text = styled.div`
         margin: 5%;
     }
     .text-title { 
-        font-size: 2vw; 
+        font-size: 2vw;
+        @media (max-width: 768px) {
+            font-size: 4vw;
+        } 
     }
     .text { 
-        font-size: 1.5vw; 
+        font-size: 1.5vw;
+        @media (max-width: 768px) {
+            font-size: 3vw;
+        } 
     }
 `;
 const Desc = styled.p`

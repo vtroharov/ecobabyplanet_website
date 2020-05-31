@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
 export default class Default extends Component {
     render() {
         console.log(this.props);
         return (
-            <div className="container">
+            <Main className="container">
                 <div className="row">
                     <div className="col-10 mx-auto text-center text-title text-uppercase pt-5">
                         <h1 className="display-3">404</h1>
@@ -16,7 +17,11 @@ export default class Default extends Component {
                             </span> was not found</h3>
                     </div>
                 </div>
-            </div>
+            </Main>
         );
     }
 }
+
+const Main = styled.div`
+    margin-top: 75px;
+`;

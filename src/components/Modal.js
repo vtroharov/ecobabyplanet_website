@@ -22,10 +22,10 @@ export default class Modal extends Component {
                                 <div className="row">
                                     <div id="modal" className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5">
                                         <h5>item added to the cart</h5>
-                                        <img src={img} className="img-fluid" alt="product" />
+                                        <img src={img[0]} className="img-fluid" alt="product" />
                                         <h5>{title}</h5>
                                         <h5 className="text-muted">price : $ {price}</h5>
-                                        <Link to='/shop'>
+                                        <Link to='/au_shop'>
                                             <ButtonContainer onClick= {() => closeModal()}>
                                                 continue shopping
                                             </ButtonContainer>
@@ -49,6 +49,7 @@ export default class Modal extends Component {
 
 const ModalContainer = styled.div`
     position: fixed;
+    z-index: 99999;
     top: 0;
     left: 0;
     right: 0;

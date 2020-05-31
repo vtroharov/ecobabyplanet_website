@@ -3,10 +3,38 @@ import styled from 'styled-components';
 import { ButtonContainer } from './Button';
 import banner from '../img/banner_contact.jpg';
 
-export default class AboutUs extends Component {
+import * as emailjs from 'emailjs-com'
+import { Form, FormGroup, Input } from 'reactstrap'
+
+
+export default class Contact extends Component {
+
+    state = {
+        user_name: '',
+        user_email: '',
+        subject: 'Contact Form',
+        message: '',
+      }
+    handleSubmit(e) {
+        e.preventDefault()
+        emailjs.sendForm('eco_baby_planet_email', 'contact_us', e.target, 'user_MMHEDpDLUSmg9S4RGI7DL')
+        this.resetForm()
+     }
+    resetForm() {
+        this.setState({
+          user_name: '',
+          user_email: '',
+          subject: 'Contact Form',
+          message: '',
+        })
+      }
+    handleChange = (param, e) => {
+        this.setState({ [param]: e.target.value })
+      }
+
     render() {
         return (
-            <div className="container-fluid">
+            <Main className="container-fluid">
                 <div className="row">
                     <BannerImage>
                         <img src={banner} alt="banner" className="bg" />
@@ -18,28 +46,57 @@ export default class AboutUs extends Component {
                         </h5>
                     </Text>
                 </div>
-                <Desc className="text-center text-muted my-4">Have a question, comment, or just want to say hello? Don't be shy! Just fill out the form,
-                    <br/>or email us at contact@ecobabyplanet.com and we'll be in touch in 1-2 business days.
-                </Desc>
-                <CForm className="row">
-                    <div className="form-group col-8 mx-auto">
-                        <input type="name" className="form-control" id="inputName" placeholder="First Name" />
-                    </div>
-                    <div className="form-group col-8 mx-auto">
-                        <input type="email" className="form-control" id="inputEmail" placeholder="Email" />
-                    </div>
-                    <div className="form-group col-8 mx-auto">
-                        <textarea type="message" className="form-control" id="inputMessage" placeholder="Message" rows="4" />
-                    </div>
-                    <div className="form-group col-8 mx-auto">
-                        <ButtonContainer type="submit" className="btn btn-default px-5">Send</ButtonContainer>
-                    </div>                    
+                <CForm>
+                    <Form className="row" onSubmit={this.handleSubmit.bind(this)}>
+                        <div className="heading col-md-8 mx-auto text-center text-muted my-4">Have a question, comment, or just want to say hello? Don't be shy! Just fill out the form, or email us at contact@ecobabyplanet.com and we'll be in touch in 1-2 business days.
+                        </div>
+                        <FormGroup className="col-md-8 mx-auto" controlId="formBasicName">
+                            <Input
+                                type="text"
+                                name="user_name"
+                                value={this.state.user_name}
+                                className="text-primary"
+                                onChange={this.handleChange.bind(this, 'user_name')}
+                                placeholder="First Name"
+                                required
+                            />
+                        </FormGroup>
+                        <FormGroup className="col-md-8 mx-auto" controlId="formBasicEmail">
+                            <Input
+                                type="email"
+                                name="user_email"
+                                value={this.state.user_email}
+                                className="text-primary"
+                                onChange={this.handleChange.bind(this, 'user_email')}
+                                placeholder="Your Email"
+                                required
+                            />
+                        </FormGroup>
+                        <FormGroup className="col-md-8 mx-auto" controlId="formBasicMessage">
+                            <Input
+                                type="textarea"
+                                name="message"
+                                className="text-primary"
+                                value={this.state.message}
+                                onChange={this.handleChange.bind(this, 'message')}
+                                placeholder="Your Message"
+                                required
+                            />
+                        </FormGroup>
+                        <Input type="hidden" name="subject" value={this.state.subject} />
+                        <FormGroup className="col-md-8 mx-auto">
+                            <ButtonContainer type="submit" disabled={!this.state.user_email} variant="primary" className="btn btn-default px-5">Send</ButtonContainer>
+                        </FormGroup>
+                    </Form>
                 </CForm>
-            </div>
+            </Main>
         );
     }
 }
- 
+
+const Main = styled.div`
+    margin-top: 75px;
+`;
 const Text = styled.div`
     position: absolute; 
     color: var(--mainGrey);
@@ -50,14 +107,20 @@ const Text = styled.div`
         margin: 5%;
     }
     .text-title { 
-        font-size: 2vw; 
+        font-size: 2vw;
+        @media (max-width: 768px) {
+            font-size: 4vw;
+        } 
     }
     .text { 
-        font-size: 1.5vw; 
+        font-size: 1.5vw;
+        @media (max-width: 768px) {
+            font-size: 3vw;
+        } 
     }
-`;
-const Desc = styled.div`
-    font-size: 0.7rem;
+    @media (max-width: 768px) {
+        margin-top: 5vw;
+    } 
 `;
 const BannerImage = styled.div`
     width: 100%;
@@ -72,6 +135,10 @@ const CForm = styled.div`
     display: flex;
     background: var(--darkWhite);
     padding: 20px;
+    .heading {
+        text-align: center;
+        font-size: 0.7rem;
+    }
     .btn {
         width: 100%;
     }
