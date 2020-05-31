@@ -1,7 +1,7 @@
 import React from 'react';
 import PaypalExpressBtn from 'react-paypal-express-checkout';
  
-export default class MyApp extends React.Component {
+export default class PayPalButton extends React.Component {
     render() {
         const onSuccess = (payment) => {
             // Congratulation, it came here means everything's fine!
@@ -24,7 +24,7 @@ export default class MyApp extends React.Component {
             // => sometimes it may take about 0.5 second for everything to get set, or for the button to appear
         }
  
-        let env = 'sandbox'; // you can set here to 'production' for production
+        let env = 'production'; // you can set here to 'production' for production
         let currency = 'AUD'; // or you can set this value from your props or state
         let total = this.props.totalAmount; // same as above, this is the total amount (based on currency) to be paid by using Paypal express checkout
         // Document on Paypal's currency code: https://developer.paypal.com/docs/classic/api/currency_codes/
@@ -33,6 +33,7 @@ export default class MyApp extends React.Component {
             sandbox: process.env.REACT_APP_SAND_ID,   
             production: process.env.REACT_APP_PROD_ID,
         }
+        console.log(client)
         // In order to get production's app-ID, you will have to send your app to Paypal for approval first
         // For sandbox app-ID (after logging into your developer account, please locate the "REST API apps" section, click "Create App"):
         //   => https://developer.paypal.com/docs/classic/lifecycle/sb_credentials/
@@ -48,7 +49,7 @@ export default class MyApp extends React.Component {
                 total={total} 
                 onError={onError} 
                 onSuccess={onSuccess} 
-                onCancel={onCancel} 
+                onCancel={onCancel}
             />
         );
     }
