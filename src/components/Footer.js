@@ -37,7 +37,7 @@ export default class Footer extends Component {
         return (
             <Bottom>
                 <div className="container-fluid">
-                    <div className="row">
+                    {/* <div className="row">
                         <div className="col-6 text-left">
                             <img src={logo} width="120" height="60" alt="Logo" /> 
                         </div>
@@ -53,18 +53,31 @@ export default class Footer extends Component {
                             }}>
                             </img>
                         </div>
-                    </div> 
+                    </div>  */}
                     <div className="row mt-3">
                         <div className="col-md-4">
-                            <p className="text-uppercase">About Us</p>
+                            <img src={logo} width="120" height="60" alt="Logo" />
+                            <h6 className="text-uppercase mt-4">About Us</h6>
                             <p className="text-justify">Eco Baby Planet is an Australian brand creating unique and modern eco-friendly products for babies and young children.<br/>​​​​​​​Founded in 2018, Eco Baby Planet started out of a desire for beautiful and high quality baby products, cherished and loved by new parents everywhere.</p>
                         </div>
                         <div className="fluid col-md-4 text-center">
-                            <p className="text-uppercase">Contact Us</p>
+                            <h6 className="text-uppercase mt-5">Contact Us</h6>
                             <p>info@ecobabyplanet.com</p>
                         </div>
                         <div className="col-md-4">
-                            <p className="text-uppercase">What's up with Eco Baby Planet</p>
+                            <div className="text-right">
+                            <img src={face} alt="face" width="25" height="25" className="social" onClick={() => {
+                                let win = window.open('')
+                                win.location.replace('https://www.facebook.com/ecobabyplanet')
+                            }}>
+                            </img>
+                            <img src={insta} alt="insta" width="25" height="25" className="social" onClick={() => {
+                                let win = window.open('')
+                                win.location.replace('https://www.instagram.com/ecobabyplanet/')
+                            }}>
+                            </img>
+                            </div>
+                            <h6 className="text-uppercase mt-4">What's up with Eco Baby Planet</h6>
                             <p className="text-justify">Get exclusive discounts, blog posts and product launches. No spam, ever.</p>
                             <Form onSubmit={this.handleSubmit.bind(this)}>
                                 <FormGroup className="mx-auto" controlid="formBasicName">
@@ -72,7 +85,7 @@ export default class Footer extends Component {
                                         type="text"
                                         name="user_name"
                                         value={this.state.user_name}
-                                        className="text-primary"
+                                        className="text-primary fontSize"
                                         onChange={this.handleChange.bind(this, 'user_name')}
                                         placeholder="First Name"
                                         required
@@ -83,7 +96,7 @@ export default class Footer extends Component {
                                         type="email"
                                         name="user_email"
                                         value={this.state.user_email}
-                                        className="text-primary"
+                                        className="text-primary fontSize"
                                         onChange={this.handleChange.bind(this, 'user_email')}
                                         placeholder="Your Email"
                                         required
@@ -92,7 +105,7 @@ export default class Footer extends Component {
                                 <Input type="hidden" name="subject" value={this.state.subject} />
                                 <Input type="hidden" name="message" value={this.state.message} />
                                 <FormGroup className="mx-auto">
-                                    <ButtonContainer type="submit" disabled={!this.state.user_email} variant="primary" className="btn btn-default">Submit</ButtonContainer>
+                                    <ButtonContainer type="submit" disabled={!this.state.user_email} variant="primary" className="btn btn-default fontSize">Submit</ButtonContainer>
                                 </FormGroup>
                             </Form>
                         </div>
@@ -127,5 +140,7 @@ const Bottom = styled.div`
         cursor: pointer;
         margin-right: 6px;
     }
+    .fontSize {
+        font-size: 10px;
+    }
 `;
-

@@ -7,7 +7,7 @@ export default function CartItem({item, value}) {
     return (
         <div className="row my-2 text-capitalize text-center">
             <div className="col-10 mx-auto col-md-2">
-                <img src={img[0]} style={{width:'5rem', height:'5rem'}} className="img-fluid" alt="product" />
+                <img src={img[0]} style={{width:'6rem', height:'6rem'}} className="img-fluid pic" alt="product" />
             </div>
             <div className="col-10 mx-auto col-md-2">
                 <span className="d-md-none">product: </span>
@@ -17,7 +17,7 @@ export default function CartItem({item, value}) {
                 <span className="d-md-none">price: </span>
                 ${price}
             </div>
-            <div className="col-10 mx-auto col-md-3 my-lg-0">
+            <div className="col-10 mx-auto col-md-3 my-2 my-md-0">
                 <div className="d-flex justify-content-center">
                     <div>
                         <span className="btn btn-black mx-1" onClick={() => decrement(id)}>-</span>

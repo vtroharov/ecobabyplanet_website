@@ -77,6 +77,7 @@ export default class Contact extends Component {
                                 type="textarea"
                                 name="message"
                                 className="text-primary"
+                                rows="8"
                                 value={this.state.message}
                                 onChange={this.handleChange.bind(this, 'message')}
                                 placeholder="Your Message"
