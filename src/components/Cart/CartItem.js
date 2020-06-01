@@ -32,7 +32,7 @@ export default function CartItem({item, value}) {
                 </div>
             </div>
             <div className="col-10 mx-auto col-md-2">
-                <strong> item total: ${total}</strong>
+                <strong> item total: ${+(total.toFixed(2))}</strong>
             </div>
         </div>
     )
