@@ -12,12 +12,12 @@ import Details from './components/Details';
 import Cart from './components/Cart';
 import Default from './components/Default';
 import Modal from './components/Modal';
-import AboutUs from './components/AboutUs';
+// import AboutUs from './components/AboutUs';
 import VIP from './components/VIP';
 import Home from './components/Home';
 import Contact from './components/Contact';
-import Blog from './components/Blog/Blog';
-import Post from './components/Blog/Post';
+/* import Blog from './components/Blog/Blog';
+import Post from './components/Blog/Post'; */
 import Construct from './components/Construct';
 //import Test from './components/Test';
 
