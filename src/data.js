@@ -2,7 +2,7 @@ export const storeProducts = [
   {
     id: 1,
     title: "Milestone Blanket",
-    img: ["products/milestone_blanket.jpg", "products/milestone_blanket2.jpg", "products/milestone_blanket3.jpg", "products/milestone_blanket4.jpg", "products/milestone_blanket5.jpg", "products/milestone_blanket6.jpg", "products/milestone_blanket7.jpg", "products/milestone_blanket8.jpg"],
+    img: ["products/milestone_blanket.jpg", "products/milestone_blanket2.jpg", "products/milestone_blanket3.jpg", "products/milestone_blanket4.jpg", "products/milestone_blanket5.jpg", "products/milestone_blanket6.jpg", "products/milestone_blanket7.jpg", "products/milestone_blanket8.jpg", "products/milestone_blanket9.png"],
     price: 39.95,
     company: "Eco Baby PLanet",
     info: "Our neutral gender baby giraffe blanket will be a cherished keepsake for you. Swaddle and comfort your adorable new baby with this soft, luxurious blanket.\nYour cozy blanket will make your job as a new mom easier, letting you soothe and quiet your baby, or even just cuddle up for story time. Best of all, your blanket comes with a wooden month marker and our beautiful and funny Baby Milestone Cards Set!\nOur Milstone Blanket and Cards Set would also make a great baby shower gift for a new mom to be.\nOur Bundle includes:\n- 1 Milestone blanket 1m x 1m\n- 1 Eco-Friendly wooden ring marker\n- 1 Milestone card set (24 designs)\n- Beautiful packaging ready to be gifted.",
@@ -65,12 +65,23 @@ export const storeProducts = [
     count: 0,
     total: 0
   },
+  {
+    id: 7,
+    title: "Reusable Nursing Breast Pads (12 Pack)",
+    img: ["products/nursing_pads.png", "products/nursing_pads2.jpg", "products/nursing_pads3.jpg", "products/nursing_pads4.jpg", "products/nursing_pads5.jpg", "products/nursing_pads6.jpg", "products/nursing_pads7.png", "products/nursing_pads8.png", "products/nursing_pads9.png", "products/nursing_pads10.png"],
+    price: 29.95,
+    company: "Eco Baby PLanet",
+    info: "🌸 SAVE MONEY & BE ECO-FRIENDLY by using our organic reusable nursing pads instead of buying disposables. Very easy to wash since they are machine washable, and they get softer as you wash them!\n🌸 EXTRA ABSORBENT & LEAK-PROOF even for heavy flow or overnight. Our goal is for all the mummies to always feel safe and comfortable. Our breast pads are super soft and breathable yet waterproof and durable. Diameter size: 12cm for maxi coverage.\n🌸 BEAUTIFUL AUSTRALIAN DESIGNS: breastfeeding mums are heroes and they deserve the best! Why would you have to choose between effectiveness and look? Our breastfeeding pads are of great quality but we also made sure they look gorgeous!\n🌸 COMPLEMENTARY LAUNDRY BAG: pop your bamboo pads in the delicate washing bag to protect them and not lose them in the rest of your laundry. Super convenient!\n🌸 PERFECT GIFT for a mum-to-be or breastfeeding mum. Get a set for a baby shower and it will be the most useful and appreciated gift: all nursing mums need breast pads, especially when they look so cute!",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
 ];
 
 export const detailProduct = {
   id: 1,
   title: "Milestone Blanket",
-  img: ["products/milestone_blanket.jpg", "products/milestone_blanket2.jpg", "products/milestone_blanket3.jpg", "products/milestone_blanket4.jpg", "products/milestone_blanket5.jpg", "products/milestone_blanket6.jpg", "products/milestone_blanket7.jpg", "products/milestone_blanket8.jpg"],
+  img: ["products/milestone_blanket.jpg", "products/milestone_blanket2.jpg", "products/milestone_blanket3.jpg", "products/milestone_blanket4.jpg", "products/milestone_blanket5.jpg", "products/milestone_blanket6.jpg", "products/milestone_blanket7.jpg", "products/milestone_blanket8.jpg", "products/milestone_blanket9.png"],
   price: 39.95,
   company: "Eco Baby PLanet",
   info: "Our neutral gender baby giraffe blanket will be a cherished keepsake for you. Swaddle and comfort your adorable new baby with this soft, luxurious blanket.\nYour cozy blanket will make your job as a new mom easier, letting you soothe and quiet your baby, or even just cuddle up for story time. Best of all, your blanket comes with a wooden month marker and our beautiful and funny Baby Milestone Cards Set!\nOur Milstone Blanket and Cards Set would also make a great baby shower gift for a new mom to be.\nOur Bundle includes:\n- 1 Milestone blanket 1m x 1m\n- 1 Eco-Friendly wooden ring marker\n- 1 Milestone card set (24 designs)\n- Beautiful packaging ready to be gifted.",
