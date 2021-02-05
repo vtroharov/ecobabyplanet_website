@@ -27,7 +27,7 @@ export default class AboutUs extends Component {
                     </div>
                     <div className="col-md-5 mx-auto">
                         <h6 className="text-muted">Our Vision</h6><br/>
-                        <Desc className="text-muted text-justify">Parenting is tough. Finding modern, high quality products for your little ones shouldn't be.
+                        <Desc className="text-muted text-justify">Parenting is tough. Finding modern, high quality products for your little ones shouldn't be. 
                         <br/><br/>At Eco Baby Planet, we don't just create baby products. We create your favorite baby products. You know, the kind that gives you that nostalgic feeling when you have to put it away once your baby has grown up.
                         <br/><br/>Every decision we make is with this goal in mind. We dream it, then we make it and the end-result is something magical. We love reinventing what's possible and our promise to you is to deliver high quality, unique designs and creations but also experiences and ideas. We want to inspire you.
                         <br/><br/>Best ideas come from collaboration. We're excited to start a dialogue, learn about you and make something beautiful together.
