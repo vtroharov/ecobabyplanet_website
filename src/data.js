@@ -43,17 +43,17 @@ export const storeProducts = [
     count: 0,
     total: 0
   },
-  {
-    id: 5,
-    title: "Pregnancy Cards",
-    img: ["products/pregnancy_cards.jpg", "products/pregnancy_cards2.jpg", "products/pregnancy_cards3.jpg", "products/pregnancy_cards4.jpg", "products/pregnancy_cards5.jpg", "products/pregnancy_cards6.jpg", "products/pregnancy_cards7.jpg", "products/pregnancy_cards8.jpg"],
-    price: 14.95,
-    company: "Eco Baby PLanet",
-    info: "Introducing the Exclusive Pregnancy Cards by Eco Baby Planet that bring a unique feel as you’re going through your pregnancy.\n\nHere Are The Top 4 Reasons Why These Cards Are Highly Sought After\nUniqueness. As expected, these cards will document classic pregnancy milestones. Also, they bring a twist; they also cater to those funny and cheeky ones like “No one warned me about this”. You will definitely appreciate the humor in these milestones.\nLarge In Size. Our milestone cards are large. How does this make them special? Well, this allows them to be suitable for your pictures. Their size allows any words on them to be legible in photos.\nQuality. All Eco Baby Planet products are high quality and these cards are no different. They are made from high-quality cardboard that will get the job done.\nPerfect Gift Idea. Whether you’re looking to present your sister, aunt, wife or any female in your life, this will be a winner. Any prospective mothers will be grateful for this memory-facilitating package.",
-    inCart: false,
-    count: 0,
-    total: 0
-  },
+  // {
+  //   id: 5,
+  //   title: "Pregnancy Cards",
+  //   img: ["products/pregnancy_cards.jpg", "products/pregnancy_cards2.jpg", "products/pregnancy_cards3.jpg", "products/pregnancy_cards4.jpg", "products/pregnancy_cards5.jpg", "products/pregnancy_cards6.jpg", "products/pregnancy_cards7.jpg", "products/pregnancy_cards8.jpg"],
+  //   price: 14.95,
+  //   company: "Eco Baby PLanet",
+  //   info: "Introducing the Exclusive Pregnancy Cards by Eco Baby Planet that bring a unique feel as you’re going through your pregnancy.\n\nHere Are The Top 4 Reasons Why These Cards Are Highly Sought After\nUniqueness. As expected, these cards will document classic pregnancy milestones. Also, they bring a twist; they also cater to those funny and cheeky ones like “No one warned me about this”. You will definitely appreciate the humor in these milestones.\nLarge In Size. Our milestone cards are large. How does this make them special? Well, this allows them to be suitable for your pictures. Their size allows any words on them to be legible in photos.\nQuality. All Eco Baby Planet products are high quality and these cards are no different. They are made from high-quality cardboard that will get the job done.\nPerfect Gift Idea. Whether you’re looking to present your sister, aunt, wife or any female in your life, this will be a winner. Any prospective mothers will be grateful for this memory-facilitating package.",
+  //   inCart: false,
+  //   count: 0,
+  //   total: 0
+  // },
   {
     id: 6,
     title: "Gender Reveal Decorations",

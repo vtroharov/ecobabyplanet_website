@@ -23,12 +23,7 @@ export default class Navbar extends Component {
                                 home
                             </Link>
                         </li>
-                        {/* <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <Link to='/about_us' className='nav-link'>
-                                about us
-                            </Link>
-                        </li> */}
-                        <li className="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        {/* <li className="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <div className="nav-link dropdown-tog" data-toggle="dropdown">shop</div>
                             <ul className="dropdown-menu pl-3">
                                 <li>
@@ -42,6 +37,16 @@ export default class Navbar extends Component {
                                     </Link>
                                 </li>
                             </ul>
+                        </li> */}
+                        <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <Link to='/au_shop' className='nav-link'>
+                                Shop
+                            </Link>
+                        </li>
+                        <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <Link to='/about_us' className='nav-link'>
+                                about us
+                            </Link>
                         </li>
                         <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <Link to='/contact' className='nav-link'>
