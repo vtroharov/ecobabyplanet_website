@@ -69,7 +69,7 @@ export const storeProducts = [
     id: 7,
     title: "Reusable Nursing Breast Pads (12 Pack)",
     img: ["products/nursing_pads.png", "products/nursing_pads2.jpg", "products/nursing_pads3.jpg", "products/nursing_pads4.jpg", "products/nursing_pads5.jpg", "products/nursing_pads6.jpg", "products/nursing_pads7.png", "products/nursing_pads8.png", "products/nursing_pads9.png", "products/nursing_pads10.png"],
-    price: 29.95,
+    price: 31.95,
     company: "Eco Baby PLanet",
     info: "🌸 SAVE MONEY & BE ECO-FRIENDLY by using our organic reusable nursing pads instead of buying disposables. Very easy to wash since they are machine washable, and they get softer as you wash them!\n🌸 EXTRA ABSORBENT & LEAK-PROOF even for heavy flow or overnight. Our goal is for all the mummies to always feel safe and comfortable. Our breast pads are super soft and breathable yet waterproof and durable. Diameter size: 12cm for maxi coverage.\n🌸 BEAUTIFUL AUSTRALIAN DESIGNS: breastfeeding mums are heroes and they deserve the best! Why would you have to choose between effectiveness and look? Our breastfeeding pads are of great quality but we also made sure they look gorgeous!\n🌸 COMPLEMENTARY LAUNDRY BAG: pop your bamboo pads in the delicate washing bag to protect them and not lose them in the rest of your laundry. Super convenient!\n🌸 PERFECT GIFT for a mum-to-be or breastfeeding mum. Get a set for a baby shower and it will be the most useful and appreciated gift: all nursing mums need breast pads, especially when they look so cute!",
     inCart: false,
