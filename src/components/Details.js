@@ -42,6 +42,7 @@ export default class Details extends Component {
         return (
             <ProductConsumer>
                 {(value) => {
+                    console.log(value);
                     const {id, company, img, info, price, title, inCart} = value.detailProduct;
                     //this.state.total_images = img.length - 1;
                     //this.setImages(img);
