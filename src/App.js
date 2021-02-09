@@ -18,7 +18,7 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 /* import Blog from './components/Blog/Blog';
 import Post from './components/Blog/Post'; */
-import Construct from './components/Construct';
+// import Construct from './components/Construct';
 //import Test from './components/Test';
 
 class App extends Component {
